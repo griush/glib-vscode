@@ -1,0 +1,34 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Glib",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+            "include": "#comments"
+        }
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.glib",
+				"match": "\\b(ifeq|jmp|push|pop|dup|print|printc|input|inputc|add|sub|mul|inc|dec)\\b"
+			}]
+		},
+		"numbers": {
+			"name": "constant.numeric.glib",
+			"match": "0|1|2|3|4|5|6|7|8|9"
+		},
+		"comments": {
+            "patterns": [{
+                "name": "comment.line.number-sign.glib",
+                "match": "//.*"
+            }]
+        }
+	},
+	"scopeName": "source.glib"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "glib",
+  "displayName": "glib-vscode",
+  "description": "glib lang",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "glib",
+      "aliases": ["Glib", "glib"],
+      "extensions": [".glib"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "glib",
+      "scopeName": "source.glib",
+      "path": "./syntaxes/glib.tmLanguage.json"
+    }]
+  }
+}
